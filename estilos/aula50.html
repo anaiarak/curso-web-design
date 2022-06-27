@@ -30,6 +30,9 @@
                 font-family: sans-serif;
                 border:none;
             }
+            #user:focus, #pass:focus{
+                background-color: #ddd;
+            }
 
             .btn{
                 margin-top: 15px;
@@ -46,8 +49,9 @@
         <form action="#" method="POST" class="formlogin">
            <fieldset>
                 <legend>Login</legend>
+
                 <label for="user">Digite o seu úsuario</label>
-                <input type="text" id="user" name="user">
+                <input type="text" id="user" name="user" autofocus>
 
                 <label for="user">Digite a senha</label>
                 <input type="password" id="pass" name="pass">
